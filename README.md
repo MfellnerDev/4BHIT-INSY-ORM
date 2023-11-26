@@ -1,3 +1,3 @@
-# ORM
+# ORM AUFGABENSTELLUNG
 
-Aufgabenstellung ORM (GK)
+[Aufgabenstellung für ORM GK](https://elearning.tgm.ac.at/mod/assign/view.php?id=75999)

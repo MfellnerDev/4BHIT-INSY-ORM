@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "https://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <!-- name="java:hibernate/SessionFactory" -->
+    <session-factory>
+        <property name="hbm2ddl.auto">update</property>
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.url">jdbc:postgresql://127.0.0.1/webshop</property>
+        <property name="connection.username">mfellner</property>
+        <property name="connection.password">Q3qEy97MFMNc383Zty5YrYaYaNYFeZ</property>
+
+        <property name="hibernate.jdbc.use_get_generated_keys">true</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="hibernate.show_sql">true</property>
+
+        <mapping class="model.Article"/>
+        <mapping class="model.Client"/>
+        <mapping class="model.Order"/>
+        <mapping class="model.OrderLine"/>
+    </session-factory>
+</hibernate-configuration>
